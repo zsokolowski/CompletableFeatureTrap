@@ -1,0 +1,43 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = crlf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+tab_width = 4
+ij_java_doc_align_param_comments = false
+ij_continuation_indent_size = 4
+trim_trailing_whitespace = true
+
+[*.sh]
+# crlf on .sh may lead to errors in Docker containers
+end_of_line = lf
+
+[*.yaml]
+indent_size = 2
+
+[*.yml]
+indent_size = 2
+tab_width = 2
+indent_style = space
+indent_size = 2
+ij_continuation_indent_size = 4
+
+[{*.tf, *.tfvars}]
+indent_size = 2
+indent_style = tab
+ij_hcl-terraform_array_wrapping = 2
+ij_hcl-terraform_keep_blank_lines_in_code = 2
+ij_hcl-terraform_keep_indents_on_empty_lines = false
+ij_hcl-terraform_keep_line_breaks = true
+ij_hcl-terraform_object_wrapping = 2
+ij_hcl-terraform_property_alignment = 2
+ij_hcl-terraform_property_line_commenter_character = 0
+ij_hcl-terraform_space_after_comma = true
+ij_hcl-terraform_space_before_comma = false
+ij_hcl-terraform_spaces_around_assignment_operators = true
+ij_hcl-terraform_spaces_within_braces = false
+ij_hcl-terraform_spaces_within_brackets = false
+ij_hcl-terraform_wrap_long_lines = false
